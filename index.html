@@ -22,19 +22,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+    <link rel="stylesheet" href="./src/assets/styles/styles.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg text-white p-left30 p-right30">
-      <div class="container-fluid m-0 p-0">
+  <body id="body-section">
+    <nav
+      class="navbar navbar-expand-lg text-white p-left30 p-right30 nav-container-l"
+    >
+      <div class="container-fluid m-0 p-0 align-items-end">
         <a
-          class="navbar-brand text-white fs-1 d-flex align-items-center p-0 m-0"
+          class="navbar-brand text-white d-flex align-items-center p-0 m-0 me-3"
           href="#"
-          ><img
-            class="brand-icon"
-            src="./src/assets/img/nav-icon.png"
-            alt="Logo"
-          />Jonathan Díaz</a
+          ><img src="./src/assets/img/favicon-2.png" alt="Logo" />Jonathan
+          Díaz</a
         >
         <div>
           <button
@@ -50,12 +49,38 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link text-white" aria-current="page" href="#"
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                aria-current="page"
+                href="#body-section"
+                >Inicio</a
+              >
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                aria-current="page"
+                href="#about-me-section"
                 >Sobre mí</a
               >
-              <a class="nav-link text-white" href="#">Skills</a>
-              <a class="nav-link text-white" href="#">Experiencia</a>
-              <a class="nav-link text-white" href="#">Educación</a>
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                href="#skills-section"
+                >Skills</a
+              >
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                href="#experience-section"
+                >Experiencia</a
+              >
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                href="#education-section"
+                >Educación</a
+              >
+              <a
+                class="nav-link text-white proyects-link border-0 mt-1"
+                href="#contact-section"
+                >Contacto</a
+              >
             </div>
           </div>
         </div>
@@ -85,18 +110,17 @@
             <a class="m-3" href="./src/pages/portfolio.html">
               <button class="proyects-link">Portafolio</button>
             </a>
-            <a class="m-3" href="#contact">
+            <a class="m-3" href="#contact-section">
               <button class="proyects-link">Contacto</button>
             </a>
           </div>
         </div>
       </div>
     </header>
-    <main class="mx-5">
-      <section
-        class="container d-flex flex-column align-items-center text-center my-5 self-description about-me-section"
-      >
-        <h2 class="display-3 fw-bold my-4">Acerca de mí</h2>
+    <main class="d-flex flex-column align-items-center">
+      <div id="about-me-section" class="separator"><div></div></div>
+      <section class="d-flex flex-column align-items-center text-center">
+        <h2 class="display-3 fw-bold mb-5 text-center">Acerca de mí</h2>
         <p class="m-bottom-5rem max-width-50percent text-center">
           Desarrollador Front-End , Android y actor, autodidacta, apasionado y
           proactivo, manejo diferentes tipos de herramientas, tanto en el ámbito
@@ -104,8 +128,8 @@
           (relatoría, capacitación), enfocado al arte, la creatividad y el
           desarrollo de habilidades interpersonales.
         </p>
-        <div class="row align-items-center m-top25">
-          <div class="col-12 col-md-4">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 my-3">
             <i class="self-description-icon color-blue fas fa-code"></i>
             <h3 class="my-3 fw-bold">Desarrollo FrontEnd</h3>
             <p class="my-3">
@@ -114,7 +138,7 @@
               AngdivarJS.
             </p>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 my-3">
             <i class="self-description-icon color-green fab fa-android"></i>
             <h3 class="my-3 fw-bold">Desarrollo Android</h3>
             <p class="my-3">
@@ -123,7 +147,7 @@
               - RETROFIT - SQL.
             </p>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col-12 col-md-4 my-3">
             <i
               class="self-description-icon color-orange fas fa-paint-brush"
             ></i>
@@ -135,269 +159,362 @@
           </div>
         </div>
       </section>
-
-      <section class="row skills-section">
-        <h2 class="row m-top0">Skills</h2>
-        <div class="row skills">
-          <div class="col">
-            <h2 class="m-top0">Mobile</h2>
-            <div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/java.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Java</h4>
+      <div id="skills-section" class="separator"><div></div></div>
+      <section class="row">
+        <h2 class="display-3 fw-bold mb-5 text-center">Skills</h2>
+        <div class="row gap-3">
+          <div class="d-flex flex-column col border rounded-3 bkg-secondary">
+            <h2 class="my-3 text-center">Front-End</h2>
+            <div class="row align-items-center justify-content-center gap-3">
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/HTML5-img.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">HTML 5</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/Kotlin.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Kotlin</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/CSS3-img.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">CSS 3</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/retrofit-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Retrofit</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/javascript-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Javascript</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/room-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Room</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/typescript-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Typescript</h5>
+                </div>
+              </div>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/logo-bootstrap.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Bootstrap</h5>
+                </div>
+              </div>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/angular-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Angular</h5>
+                </div>
+              </div>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/react-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">React</h5>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col">
-            <h2 class="m-top0">Front-End</h2>
-            <div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/HTML5-img.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">HTML 5</h4>
+          <div class="d-flex flex-column col border rounded-3 bkg-secondary">
+            <h2 class="my-3 text-center">Mobile</h2>
+            <div class="row align-items-center justify-content-center gap-3">
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/java.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Java</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/CSS3-img.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">CSS 3</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/Kotlin.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Kotlin</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/javascript-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Javascript</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/retrofit-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Retrofit</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/typescript-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Typescript</h4>
-              </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/logo-bootstrap.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Bootstrap</h4>
-              </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/angular-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Angular JS</h4>
-              </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/react-icon.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">React JS</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/room-icon.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Room</h5>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="col">
-            <h2 class="m-top0">Diseño gráfico</h2>
-            <div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/Photoshop.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Adobe Photoshop</h4>
+          <div class="d-flex flex-column col border rounded-3 bkg-secondary">
+            <h2 class="my-3 text-center">Diseño gráfico</h2>
+            <div class="row align-items-center justify-content-center gap-3">
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/Photoshop.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Photoshop</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/Premiere.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Adobe Premiere Pro</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/Premiere.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Premiere</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/After-Effects.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Adobe After Effects</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/After-Effects.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">After effects</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/Illustrator.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Adobe Illustrator</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/Illustrator.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Illustrator</h5>
+                </div>
               </div>
-              <div class="row align-items-center m-top25">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/Audition.png"
-                  alt="Logo de tecnología"
-                />
-                <h4 class="col">Adobe Audition</h4>
+              <div
+                class="bg-transparent card align-items-center width-10rem p-2 border-transparent"
+              >
+                <div class="height-5rem">
+                  <img
+                    src="./src/assets/img/Audition.png"
+                    class="card-img-top width-70"
+                    alt="Logo de tecnología"
+                  />
+                </div>
+                <div class="card-body text-white text-center">
+                  <h5 class="card-title p-0 m-0">Audition</h5>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="resume-sections">
-        <div class="experience-section">
-          <h2 class="m-top0">Experiencia Laboral</h2>
-          <div>
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/code_icon.png"
-                  alt="Icono de código"
-                />
-              </div>
-              <div class="col">
-                <h5>DESARROLLO FRONT - END</h5>
-                <h6>DRIVIN SPA</h6>
-              </div>
-              <p class="col">
+      <div id="experience-section" class="separator"><div></div></div>
+      <section>
+        <h2 class="display-3 fw-bold mb-5 text-center">Experiencia Laboral</h2>
+        <div class="d-flex row justify-content-center gap-3">
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/code.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">DESARROLLO FRONT-END</h5>
+              <p class="mt-1 text-warning">Drivin spa</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
                 Desarrollo e implementación de sitio web oficial de la empresa,
                 y producto ofrecido al mercado; sistema de gestión TMS,
-                aplicación web. • Diseño Web & mockup - Año 2022 a la fecha
+                aplicación web. Año 2022 a la fecha
               </p>
             </div>
-
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/code_icon.png"
-                  alt="Icono de código"
-                />
-              </div>
-              <div class="col">
-                <h5>DESARROLLO ANDROID</h5>
-                <h6>DRIVIN SPA</h6>
-              </div>
-              <p class="col">
+          </div>
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/Android-img.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">DESARROLLO ANDROID</h5>
+              <p class="mt-1 text-warning">Drivin spa</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
                 Desarrollo e implementación de app Android para su cliente
                 “ChileExpress”, gestión de aprovisionamiento de carga y
                 transporte. Año 2021 • Diseño & Mockups para App
               </p>
             </div>
-
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/electric_icon.png"
-                  alt="Ícono de electricidad"
-                />
-              </div>
-              <div class="col">
-                <h5>MANTENCIÓN ELÉCTRICA</h5>
-                <h6>CONSTRUCTORA LO CAMPINO</h6>
-              </div>
-              <p class="col">
+          </div>
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/servicio-electrico.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">MANTENCIÓN ELÉCTRICA</h5>
+              <p class="mt-1 text-warning">Constructora Lo Campino</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
                 Diagnóstico, mantención y reparación de equipos electrónicos
                 para faenas inmobiliarias • Año 2019
               </p>
             </div>
-
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/mask_icon.png"
-                  alt="Máscaras de teatro"
-                />
-              </div>
-              <div class="col">
-                <h5>ACTOR</h5>
-                <h6>SENCE</h6>
-              </div>
-              <p class="col">
+          </div>
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/mascaras-de-teatro.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">ACTOR</h5>
+              <p class="mt-1 text-warning">SENCE</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
                 Interpretación actoral en el proyecto de Educación Financiera de
-                SERNAC en establecimientos educacionales de todo el país. • Año
+                SERNAC en establecimientos educacionales de todo el país. Año
                 2018
               </p>
             </div>
-
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/mask_icon.png"
-                  alt="Máscaras de teatro"
-                />
-              </div>
-              <div class="col">
-                <h5>ACTOR Y RELATOR</h5>
-                <h6>CONSdivTORA “DEJA VU”</h6>
-              </div>
-              <p class="col">
-                Consdivtora RSE “Deja vu” Relator de capacitación y realizador
-                de material audiovisual, afiches y ejecución sonora para
+          </div>
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/mascaras-de-teatro.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">ACTOR Y RELATOR</h5>
+              <p class="mt-1 text-warning">CONSULTORA “DEJA VU”</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
+                Consultora RSE “Deja vu” Relator de capacitación y realizador de
+                material audiovisual, afiches y ejecución sonora para
                 presentaciones realizadas por la empresa. De 2017 a 2018
               </p>
             </div>
-
-            <div class="row align-items-center m-top25">
-              <div class="col text-center">
-                <img
-                  class="max-width-100"
-                  src="./src/assets/img/file_icon.png"
-                  alt="Ícono de archivo"
-                />
-              </div>
-              <div class="col">
-                <h5>ENCARGADO DE OTEC</h5>
-                <h6>KIDZANIA</h6>
-              </div>
-              <p class="col">
+          </div>
+          <div class="card align-items-center width-20rem p-2 border">
+            <div class="height-5rem">
+              <img
+                src="./src/assets/img/archivo-verificado.png"
+                class="card-img-top width-70"
+                alt="Logo de tecnología"
+              />
+            </div>
+            <div class="card-body text-white text-center">
+              <h5 class="card-title p-0 m-0">ENCARGADO DE OTEC</h5>
+              <p class="mt-1 text-warning">KIDZANIA</p>
+              <div class="separator-card"><div></div></div>
+              <p class="mt-3 p-1">
                 Encargado de OTEC, creación y ejecución de relatorías y
                 dinámicas grupales. Encargado de entregar herramientas y
                 habilidades para el desarrollo comunicacional indispensable en
@@ -408,55 +525,98 @@
           </div>
         </div>
       </section>
-
+      <div id="education-section" class="separator"><div></div></div>
       <section>
         <div class="education">
-          <h2 class="m-top0">Formación</h2>
-          <div>
-            <div>
-              <p>Desarrollo Android, Programa “Talento Digital”, año 2020</p>
+          <h2 class="display-3 fw-bold mb-5 text-center">Formación</h2>
+          <div class="d-flex row gap-3 justify-content-center">
+            <div class="card align-items-center width-20rem p-2 border">
+              <div class="height-5rem">
+                <img
+                  src="./src/assets/img/code.png"
+                  class="card-img-top width-70"
+                  alt="Logo de tecnología"
+                />
+              </div>
+              <div class="card-body text-white text-center">
+                <h5 class="card-title p-0 m-0">Desarrollo FullStack</h5>
+                <div class="separator-card"><div></div></div>
+                <p class="mt-3 p-1">
+                  Cursando actualmente la carrea de Desarrollo Fullstack,
+                  Academia Desafío Latam. Año 2024
+                </p>
+              </div>
             </div>
-            <div>
-              <p>Arte escénico Profesional, año 2011</p>
+            <div class="card align-items-center width-20rem p-2 border">
+              <div class="height-5rem">
+                <img
+                  src="./src/assets/img/Android-img.png"
+                  class="card-img-top width-70"
+                  alt="Logo de tecnología"
+                />
+              </div>
+              <div class="card-body text-white text-center">
+                <h5 class="card-title p-0 m-0">Desarrollo Android</h5>
+                <div class="separator-card"><div></div></div>
+                <p class="mt-3 p-1">
+                  Desarrollo Android, Programa 'Talento Digital para Chile'. Año
+                  2020
+                </p>
+              </div>
+            </div>
+            <div class="card align-items-center width-20rem p-2 border">
+              <div class="height-5rem">
+                <img
+                  src="./src/assets/img/mascaras-de-teatro.png"
+                  class="card-img-top width-70"
+                  alt="Logo de tecnología"
+                />
+              </div>
+              <div class="card-body text-white text-center">
+                <h5 class="card-title p-0 m-0">Arte escénico Profesional</h5>
+                <div class="separator-card"><div></div></div>
+                <p class="mt-3 p-1">
+                  Arte Escénico Profesional. Universidad Santo Tomás. Año 2011
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div id="contact-section" class="separator"><div></div></div>
+      <section class="d-flex flex-column align-items-center">
+        <h2 class="display-3 fw-bold mb-5 text-center">Contacto</h2>
+        <p class="text-center fs-5">
+          Si te gustaría que en un futuro trabajemos juntos, contáctame.
+        </p>
+        <div class="d-flex justify-content-center align-items-center">
+          <a
+            class="social-img"
+            href="https://github.com/jedt89"
+            target="_blank"
+          >
+            <img src="./src/assets/img/github-icon.png" alt="GitHub icon" />
+          </a>
+          <a
+            class="social-img"
+            href="https://www.linkedin.com/in/jonathan-diaz-tobar-241572186"
+            target="_blank"
+          >
+            <img src="./src/assets/img/linkedin_icon.png" alt="Linkedin icon" />
+          </a>
 
-      <section>
-        <div>
-          <h2 class="m-top0">Contacto</h2>
-          <div>
-            <a
-              class="social-img"
-              href="https://www.linkedin.com/in/jonathan-diaz-tobar-241572186"
-              target="_blank"
-            >
-              <img
-                src="./src/assets/img/linkedin_icon.png"
-                alt="Linkedin icon"
-              />
-            </a>
-
-            <a
-              class="social-img"
-              href="https://wa.me/1234567890"
-              target="_blank"
-            >
-              <img
-                src="./src/assets/img/whatsapp_icon.png"
-                alt="Whatsapp icon"
-              />
-            </a>
-          </div>
+          <a class="social-img" href="https://wa.me/1234567890" target="_blank">
+            <img src="./src/assets/img/whatsapp_icon.png" alt="Whatsapp icon" />
+          </a>
         </div>
       </section>
     </main>
-
-    <footer class="flex-column justify-content-center">
+    <div class="separator"><div></div></div>
+    <footer class="d-flex flex-column align-items-center text-center">
       <p>Jonathan Díaz</p>
+      <p>Desarrollador Front-End</p>
       <p>Derechos resevados</p>
-      <p>2024</p>      
+      <p>2024</p>
     </footer>
 
     <script
