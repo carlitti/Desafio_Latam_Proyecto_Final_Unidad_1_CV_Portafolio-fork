@@ -240,6 +240,10 @@ a.navbar-brand:hover {
   .max-width-50percent {
     max-width: 100%;
   }
+
+  .nav-div {
+    justify-content: center !important;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -249,7 +253,7 @@ a.navbar-brand:hover {
     align-items: center;
   }
 
-  #about-me {
+  .about-me {
     margin: 0px !important;
   }
 
