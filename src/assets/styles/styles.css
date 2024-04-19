@@ -237,12 +237,13 @@ a.navbar-brand:hover {
     }
   }
 
-  .max-width-50percent {
-    max-width: 100%;
-  }
-
   .nav-div {
     justify-content: center !important;
+  }
+
+  .profile-img {
+    max-width: 90%;
+    margin-top: 20px;
   }
 }
 
@@ -260,20 +261,24 @@ a.navbar-brand:hover {
   .proyects-link {
     max-width: 170px;
   }
+
+  .max-width-50percent {
+    max-width: 100%;
+  }
+
+  .width-10rem {
+    width: 8rem !important;
+  }
 }
 
 @media (max-width: 1440px) {
   section {
     width: 100%;
-    padding: 0px 5px !important;
+    padding: 0px 10px !important;
     margin: 0px;
   }
 
   .separator {
-    margin-top: 1rem !important;
-  }
-
-  .width-10rem {
-    width: 8rem !important;
+    margin-top: 4rem !important;
   }
 }
