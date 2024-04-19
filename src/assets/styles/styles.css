@@ -163,6 +163,7 @@ ul {
 
 .social-img {
   margin: 20px;
+  width: fit-content;
 
   img {
     width: 90px;
@@ -228,12 +229,6 @@ a.navbar-brand:hover {
   .self-description {
     p {
       max-width: 100%;
-    }
-  }
-
-  .social-img {
-    img {
-      width: 50px;
     }
   }
 
